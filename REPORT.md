@@ -36,6 +36,8 @@ Deep Deterministic Policy Gradients (DDPG) is a policy-gradient actor-critic alg
 
 
 ### Results
+During the training process, the learning rate of two networks decay with the episodes. Also, the noise temperature also decays at each sampling event. These tricks help improve the training speed greatly.
+
 The recored of the training process is plotted as below:
 
 ![results](scores.png)
