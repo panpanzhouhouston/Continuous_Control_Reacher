@@ -23,16 +23,16 @@ Deep Deterministic Policy Gradients (DDPG) is a policy-gradient actor-critic alg
     - Output: (128, 1) - Linear
 
 ### Hyperparameters
-BUFFER_SIZE = int(1e6)  # replay buffer size
-BATCH_SIZE = 128        # minibatch size
-GAMMA = 0.99            # discount factor
-TAU = 1e-3              # for soft update of target parameters
-LR_ACTOR = 1e-3        # learning rate of the actor 
-LR_CRITIC = 1e-4        # learning rate of the critic
-LR_DECAY = 0.99         # In each episode, the learning rate is decayed by a factor
-NOISE_DECAY_FACTOR = 0.999         # noise decay factor after each sampling
+ - BUFFER_SIZE = int(1e6)  # replay buffer size
+ - BATCH_SIZE = 128        # minibatch size
+ - GAMMA = 0.99            # discount factor
+ - TAU = 1e-3              # for soft update of target parameters
+ - LR_ACTOR = 1e-3        # learning rate of the actor 
+ - LR_CRITIC = 1e-4        # learning rate of the critic
+ - LR_DECAY = 0.99         # In each episode, the learning rate is decayed by a factor
+ - NOISE_DECAY_FACTOR = 0.999         # noise decay factor after each sampling
 
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu") # the network is run on Nvida GPU  1080
+ - device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu") # the network is run on Nvida GPU  1080
 
 
 ### Results
@@ -44,6 +44,6 @@ The trained agent can catch the motion of the balls very well.
 ![results](Reacher_trained_agent.gif)
 
 ### Further Improvements
-D4PG and PPO algorithm worth a try for this project.
-Train the agent in distributed system to improve the speed.
-Crawer enviroment is going to be tested.
+ - D4PG and PPO algorithm worth a try for this project.
+ - Train the agent in distributed system to improve the speed.
+ - Crawer enviroment is going to be tested.
