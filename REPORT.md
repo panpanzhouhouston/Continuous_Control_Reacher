@@ -49,3 +49,7 @@ The trained agent can catch the motion of the balls very well.
  - D4PG and PPO algorithm worth a try for this project.
  - Train the agent in distributed system to improve the speed.
  - Crawer enviroment is going to be tested.
+ 
+### Reference
+https://pemami4911.github.io/blog/2016/08/21/ddpg-rl.html
+https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-i-q-learning-sarsa-dqn-ddpg-72a5e0cb6287
